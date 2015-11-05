@@ -1,0 +1,60 @@
+h1{
+  margin: 0em;
+  font-size: 3.5em;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+#indexContainer {
+  margin-top: 10%;
+  margin-right: 25%;
+  margin-left: 25%;
+  border: solid black 1px;
+  box-sizing: border-box;
+  padding-bottom: 0px;
+}
+
+header{
+  display: flex;
+  margin-bottom: 1em;
+}
+
+#ngTitle{
+  width: 50%;
+  margin: auto;
+  display: block;
+  height: auto;
+}
+
+#ngSmiley{
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+#titleContainer{
+  width: 75%;
+  padding: 1em;
+  display: block;
+  text-align: center;
+  height: auto;
+  float: left;
+  border: solid black 1px;
+}
+
+#logoContainer{
+  width: 25%;
+  padding: 1em;
+  display: block;
+  height: auto;
+  float: left;
+  border: solid black 1px;
+}
+
+#formContainer{
+  padding: 1em;
+  text-align: center;
+}
+
+#textContainer{
+  padding: 2em;
+}
