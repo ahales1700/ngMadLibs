@@ -2,14 +2,30 @@
  * Created by Anthony Hales on 11/4/2015.
  */
 angular.module('ngMadLibs', [])
-.controller('madLibCtrl', function($scope){
-        $scope.female_name;
-        $scope.job_title;
-        $scope.tedious_task;
-        $scope.dirty_task;
-        $scope.celebrity;
-        $scope.useless_skill;
-        $scope.adjective;
-        $scope.obnoxious_celebrity;
-        $scope.huge_number;
+    .controller('madLibCtrl', function ($scope) {
+        $scope.master = {
+            female_name: '',
+            job_title: '',
+            tedious_task: '',
+            dirty_task: '',
+            celebrity: '',
+            useless_skill: '',
+            adjective: '',
+            obnoxious_celebrity: '',
+            huge_number: ''
+        };
+        $scope.reset = function () {
+            $scope.madLib = angular.copy($scope.master);
+        };
+
+        $scope.submit = function () {
+            $scope.madLibImportForm.$submitted = true;
+        };
+
+        $scope.startOver = function () {
+            $scope.reset();
+            $scope.madLibImportForm.$submitted = false;
+        };
+
+        $scope.reset();
     });
